@@ -9,7 +9,7 @@ version: '2'
 services:
   bugzilla:
     container_name: bugzilla-dev
-    image: bugzilla/bugzilla-dev
+    build: . 
     ports:
       - "80:80"
       - "5900:5900"

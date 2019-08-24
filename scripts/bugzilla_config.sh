@@ -10,7 +10,7 @@ cd $BUGZILLA_WWW
 
 # Configure database
 /usr/bin/mysqld_safe &
-sleep 5
+sleep 25
 mysql -u root mysql -e "GRANT ALL PRIVILEGES ON *.* TO bugs@localhost IDENTIFIED BY 'bugs'; FLUSH PRIVILEGES;"
 mysql -u root mysql -e "CREATE DATABASE bugs CHARACTER SET = 'utf8';"
 
